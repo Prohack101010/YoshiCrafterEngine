@@ -35,6 +35,11 @@
       "version": null
     },
     {
+      "name": "hxCodec",
+      "type": "haxelib",
+      "version": null
+    },
+    {
       "name": "flixel",
       "type": "haxelib",
       "dir": null,
