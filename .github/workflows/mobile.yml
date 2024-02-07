@@ -23,9 +23,6 @@ jobs:
       - name: Install Libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib --quiet install hmm
-          haxelib run hmm install --quiet
-          haxelib install flixel
           haxelib run lime setup
           haxelib install flixel-tools
           haxelib install flixel-addons
@@ -35,7 +32,6 @@ jobs:
           haxelib install akifox-asynchttp
           haxelib install flixel-addons
           haxelib install newgrounds
-          haxelib install linc_luajit
           haxelib install hxp
           haxelib git faxe https://github.com/uhrobots/faxe
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
@@ -46,6 +42,8 @@ jobs:
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib git hxCodec https://github.com/polybiusproxy/hxCodec
           haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
+          haxelib --quiet install hmm
+          haxelib run hmm install --quiet
       - name: Configure Android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
