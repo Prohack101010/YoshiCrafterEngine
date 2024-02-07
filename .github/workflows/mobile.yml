@@ -26,7 +26,6 @@ jobs:
           haxelib --quiet install hmm
           haxelib run hmm install --quiet
           haxelib install flixel
-          haxelib run lime setup flixel
           haxelib run lime setup
           haxelib install flixel-tools
           haxelib install flixel-addons
@@ -41,6 +40,14 @@ jobs:
           haxelib git faxe https://github.com/uhrobots/faxe
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git hscript-yoshiengine https://github.com/YoshiCrafter29/hscript-improved
+          haxelib git discord_rpc_yce https://github.com/YoshiCrafter29/linc_discord-rpc
+          haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
+          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/YoshiCrafter29/Flixel-TextureAtlas-YoshiCrafterEngine
+          haxelib git hscript-yoshiengine https://github.com/YoshiCrafter29/hscript-improved
+          haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
+          haxelib git hxCodec https://github.com/polybiusproxy/hxCodec
+          haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
       - name: Configure Android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
